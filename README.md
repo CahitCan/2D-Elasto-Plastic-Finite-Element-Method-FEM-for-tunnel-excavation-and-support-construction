@@ -6,7 +6,7 @@
 [![Theory: Mohr--Coulomb Elasto--Plastic](https://img.shields.io/badge/Theory-Mohr--Coulomb-orange.svg)]()
 [![Compilable: Nuitka C++ Binary](https://img.shields.io/badge/Nuitka-C%2B%2B%20Stand-purple.svg)]()
 
-A lightweight, high-performance, and mathematically rigorous **2D Elasto-Plastic Finite Element Method (FEM) solver** and ön-işlemci (preprocessor) for tunnel excavation, support-structure interaction, and NATM progressive stress relaxation analysis. 
+A lightweight, high-performance, and mathematically rigorous **2D Elasto-Plastic Finite Element Method (FEM) solver** and preprocessor for tunnel excavation, support-structure interaction, and NATM progressive stress relaxation analysis. 
 
 This educational and research-grade engine is designed to bridge the gap between expensive closed-source commercial geotech software (e.g., Rocscience, Plaxis) and academic transparency. Users can fully customize geometries, support elements, and soil profiles using an external JSON file, run single-stage or progressive sequential excavations, and execute multi-model parametric sensitivity sweeps.
 
