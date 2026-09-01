@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Elasto-Plastic FEM Tunnel Preprocessor, Support & Excavation Analysis Code (v29 - Curved Invert & Multi-stage Bypass Edition)
+Elasto-Plastic FEM Tunnel Preprocessor, Support & Excavation Analysis Code (v37- Curved Invert & Multi-stage Bypass Edition)
 ----------------------------------------------------------------------------------------------------
 This version introduces a complete General Preprocessing Module supporting:
 - Custom Tunnel Geometries: Circular, Horseshoe, and Horseshoe with Curved Invert.
