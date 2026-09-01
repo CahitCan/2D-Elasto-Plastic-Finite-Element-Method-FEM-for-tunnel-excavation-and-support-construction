@@ -57,7 +57,7 @@ This educational and research-grade engine is designed to bridge the gap between
 Provides a comprehensive overview of the simulation stages (Heading & Bench excavation) showing:
 - **Geometry & Mesh:** Real-time support state, structural components, and boundary conditions.
 - **Displacement Contours:** Millimetric settlement gradients.
-- **Stress Fields:** Maximum principal stress ($\sigma_1$) and Max shear stress ($	au_{max}$).
+- **Stress Fields:** Maximum principal stress ($\sigma_1$) and Max shear stress ($au_{max}$).
 - **Plastic Yielded Zones:** Red-highlighted Gauss points exceeding Mohr-Coulomb limits.
 - **GRC / SRC Equilibrium:** Ground Reaction Curve vs. Support Reaction Curve balance calculation.
 - **Lining Capacity Utilization:** Dynamic bar charts showcasing safety factor margins for Shotcrete, Steel Ribs, and Rockbolts.
