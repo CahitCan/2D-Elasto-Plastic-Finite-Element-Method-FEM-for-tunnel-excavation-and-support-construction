@@ -1,0 +1,67 @@
+{
+    "geometry": {
+        "R_tunnel": 4.0,
+        "H_wall": 3.0,
+        "R_outer": 20.0,
+        "H_depth": 100.0
+    },
+    "rock_mass": {
+        "E_rock_init": 5000.0,
+        "nu_rock": 0.25,
+        "c_rock_init": 1.2,
+        "phi_deg": 30.0,
+        "gamma_rock": 0.025
+    },
+    "support_limits": {
+        "E_shotcrete": 25000.0,
+        "fc_shotcrete_limit": 16.7,
+        "E_bolt": 210000.0,
+        "d_bolt": 0.025,
+        "T_bolt_limit": 200.0,
+        "E_steel": 210000.0,
+        "A_steel_per_m": 0.005,
+        "I_steel_per_m": 4e-05,
+        "fy_steel_limit": 235.0
+    },
+    "economic_rates": {
+        "COST_SHOTCRETE_PER_M3": 250.0,
+        "COST_ROCKBOLT_PER_M": 40.0,
+        "COST_STEEL_BEAM_FLAT": 350.0
+    },
+    "active_simulation": {
+        "use_shotcrete": true,
+        "t_shot": 0.2,
+        "use_rockbolts": true,
+        "L_bolt_val": 3.0,
+        "use_steel": true,
+        "degradation_factor": 0.0
+    },
+    "preprocessing": {
+        "tunnel_type": "horseshoe",
+        "symmetry_type": "half",
+        "R_invert": 8.0,
+        "n_r": 16,
+        "n_theta": 32,
+        "stages": [
+            {
+                "stage_idx": 1,
+                "name": "Heading Excavation (Kalota)",
+                "excavate_above_y": 0.0,
+                "active_supports": [
+                    "shotcrete",
+                    "rockbolts"
+                ]
+            },
+            {
+                "stage_idx": 2,
+                "name": "Bench Excavation (Stros)",
+                "excavate_above_y": -99.0,
+                "active_supports": [
+                    "shotcrete",
+                    "rockbolts",
+                    "steel_ribs"
+                ]
+            }
+        ]
+    }
+}
