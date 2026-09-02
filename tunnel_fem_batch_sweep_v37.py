@@ -74,6 +74,23 @@ default_params = {
         "use_steel": True,
         "degradation_factor": 0.0
     },
+    "batch_sweeps": {
+        "cohesion_sweep": {
+            "min_MPa": 0.2,
+            "max_MPa": 2.0,
+            "steps": 8
+        },
+        "shotcrete_sweep": {
+            "min_cm": 0.0,
+            "max_cm": 35.0,
+            "steps": 8
+        },
+        "rockbolt_sweep": {
+            "min_m": 0.0,
+            "max_m": 6.0,
+            "steps": 7
+        }
+    },
     "preprocessing": {
         "tunnel_type": "horseshoe", 
         "symmetry_type": "half",
@@ -100,6 +117,22 @@ default_params = {
 if not os.path.exists(params_path):
     with open(params_path, 'w', encoding='utf-8') as f_json:
         json.dump(default_params, f_json, indent=4, ensure_ascii=False)
+
+try:
+    with open(params_path, 'r', encoding='utf-8') as f_json:
+        existing = json.load(f_json)
+    updated = False
+    if "preprocessing" not in existing:
+        existing["preprocessing"] = default_params["preprocessing"]
+        updated = True
+    if "batch_sweeps" not in existing:
+        existing["batch_sweeps"] = default_params["batch_sweeps"]
+        updated = True
+    if updated:
+        with open(params_path, 'w', encoding='utf-8') as f_json:
+            json.dump(existing, f_json, indent=4, ensure_ascii=False)
+except Exception:
+    pass
 
 with open(params_path, 'r', encoding='utf-8') as f_json:
     params = json.load(f_json)
