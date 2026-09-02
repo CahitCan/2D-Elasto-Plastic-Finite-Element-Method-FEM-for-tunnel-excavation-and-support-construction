@@ -8,7 +8,7 @@
 
 A lightweight, high-performance, and mathematically rigorous **2D Elasto-Plastic Finite Element Method (FEM) solver** and preprocessor for tunnel excavation, support-structure interaction, and NATM progressive stress relaxation analysis. 
 
-This educational and research-grade engine is designed to bridge the gap between expensive closed-source commercial geotech software (e.g., Rocscience, Plaxis) and academic transparency. Users can fully customize geometries, support elements, and soil profiles using an external JSON file, run single-stage or progressive sequential excavations, and execute multi-model parametric sensitivity sweeps.
+This educational and research-grade engine is designed to bridge the gap between expensive closed-source commercial geotech software (e.g., Rocscience, Plaxis) and academic transparency. Users can fully customize geometries, support elements, and rock profiles using an external JSON file, run single-stage or progressive sequential excavations, and execute multi-model parametric sensitivity sweeps.
 
 ---
 
@@ -180,10 +180,10 @@ This generates `tunnel_fem_optimized_v37.exe` (on Windows). Students can simply 
 ## 👥 Contributors & Collaboration DNA
 
 This software was engineered through a unique, state-of-the-art **Vibe-Coding Partnership** between:
-- **Lead Geotechnical Engineer & System Architect:** (The Principal Investigator / "The Professor" behind the math, scheduling, and structural filters).
+- **Lead Geotechnical Engineer & System Architect:** (The Principal Investigator / Architect behind the math, scheduling, and structural filters).
 - **Gemini Notebook (formerly known as NotebookLM):** An advanced AI agent serving as the dedicated co-developer, translating complex elasto-plastic return mapping algorithms and polar finite element topologies into clean, zero-bloat, production-grade Python/C++ code.
 
-*This project stands as a testament to the power of agentic collaboration: transforming abstract soil mechanics into a perfectly tuned numerical engine.*
+*This project stands as a testament to the power of agentic collaboration: transforming abstract rock mechanics into a perfectly tuned numerical engine.*
 
 ---
 
